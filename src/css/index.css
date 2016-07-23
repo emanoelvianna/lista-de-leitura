@@ -1,0 +1,34 @@
+/* TOPO */
+
+header {
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: .05rem solid #e5e5e5;
+}
+
+/* PRINCIPAL */
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: 70px auto;
+    padding: 0 15px;
+}
+.item {
+    padding: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding-top: 1.5rem;
+    color: #777;
+    border-top: .05rem solid #e5e5e5;
+}
+footer p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* FONTES */
