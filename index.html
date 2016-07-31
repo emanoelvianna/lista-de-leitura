@@ -3,28 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <script src="lib/angular.min.js"></script>
     <link href="lib/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet" media="screen" />
     <link href="src/css/index.css" rel="stylesheet" media="screen" charset="utf-8">
-    <title>Lista de leitura</title>
-
-    <script>
-        angular.module("listaDeLeitura", []);
-        angular.module("listaDeLeitura").controller("listaDeLeituraCtrl", function($scope) {
-            $scope.app = "Lista de leitura";
-            $scope.isSelecionado = function(item) {
-                return itens.some(function(item) {
-                    return item.selecionado;
-                });
-            }
-
-        });
-    </script>
+    <title>Lista de metas</title>
 </head>
 
 <body ng-controller="listaDeLeituraCtrl">
     <header class="header clearfix masthead">
-        <h1>{{app}}</h1>
+        <h1>Lista de metas</h1>
     </header>
     <main>
         <section>
@@ -36,15 +22,17 @@
                         <a href="#">Use a Cabeça ! Padrões de Projetos</a>
                     </div>
                     <div class="item">
-                        <input type="checkbox" name="name" ng-model="item.selecionado" value="Programação funcional em Javascript. Implementando Curry e Compose, com bind e reduce.">
+                        <input type="checkbox" name="name" value="Programação funcional em Javascript. Implementando Curry e Compose, com bind e reduce.">
                         <label for="Programação funcional em Javascript. Implementando Curry e Compose, com bind e reduce."></label>
                         <a href="http://tableless.com.br/programacao-funcional-em-javascript-implementando-curry-e-compose-com-bind-e-reduce/">Programação funcional em Javascript. Implementando Curry e Compose, com bind e reduce.</a>
                     </div>
                 </div>
             </article>
         </section>
-        <button type="button" class="btn btn-lg btn-success">Adicionar</button>
-        <button type="button" class="btn btn-lg btn-danger" ng-disabled="true">Excluir</button>
+        <div class="botoes">
+            <button type="button" class="btn btn-lg btn-success">Adicionar</button>
+            <button type="button" class="btn btn-lg btn-danger">Excluir</button>
+        </div>
     </main>
     <footer class="footer">
         <p>© Company 2016</p>
